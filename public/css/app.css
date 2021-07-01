@@ -1,0 +1,194 @@
+body {
+  background-color: rgba(250, 250, 250, 1);
+  margin: auto;
+  height: 100vh;
+}
+
+.main {
+  margin: 44px auto 0;
+  padding: 0 0 32px;
+  transform: translateX(2px);
+}
+
+.mobile {
+  margin-right: 25px;
+}
+
+.instagram {
+  margin-left: -1px;
+  margin-bottom: 34px;
+}
+
+.section-2 {
+  margin-top: 5px;
+}
+
+.section-2-2 {
+  background-color: #fff;
+  height: 63px;
+  width: 350px;
+  border: 1px solid rgb(219, 219, 219);
+}
+
+.section-2-1,
+.section-2-2 {
+  margin: 0 0 10px;
+  padding: 10px 0;
+}
+
+.section-2-1 {
+  background-color: #fff;
+  height: 380px;
+  width: 350px;
+  border: 1px solid rgb(219, 219, 219);
+  padding-top: 29px;
+}
+.section-2-2-1 {
+  margin: -5px 0 -5px;
+}
+
+.section-2-2-1 > p {
+  margin: 15px;
+  font-size: 14px;
+}
+
+.section-2-2-1 > p > a {
+  color: #0095f6;
+  font-weight: 50px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-1 {
+  height: 220px;
+  margin: 0 0 !important;
+}
+
+.form-1 > .form-1-1 > .form-1-1-1 > input,
+.form-1 > .form-1-2 > .form-1-2-1 > input {
+  margin-bottom: 6px;
+  width: 268px;
+  height: 38px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 3px;
+  outline: none;
+  background-color: #fafafa;
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+input:focus {
+  border-color: rgb(168, 168, 168) !important;
+}
+
+input:placeholder-shown {
+  font-size: 12px !important;
+  color: grey;
+  padding: 9px 0 7px 8px;
+}
+
+.form-1 > button {
+  width: 268px;
+  height: 30px;
+  margin: 8px 40px;
+  border: none;
+  border-radius: 5px;
+}
+.form-1 > button > div {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+
+button {
+  background-color: #0095f6;
+}
+
+button:disabled {
+  background-color: rgba(178, 223, 252) !important;
+}
+
+.facebook-login,
+.facebook-login:hover {
+  width: 268px;
+  color: #385185;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.facebook-login > .facebook {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.facebook-login > span > i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.form-2 > a,
+.form-2 > a:hover {
+  color: #385185;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.get-app {
+  font-size: 14px;
+  margin: 10px 20px;
+}
+
+.store-logo {
+  height: 40px;
+  margin-top: 10px;
+}
+
+.bgimg {
+  z-index: -1;
+}
+.img0 {
+  z-index: 1;
+  position: absolute;
+  transform: translate(113px, -504px);
+}
+/* .img1,
+.img2,
+.img3,
+.img4 {
+  position: absolute;
+  z-index: 1;
+  transform: translate(113px, -504px);
+} */
+
+.footer {
+  padding-bottom: 50px;
+}
+
+.about > li,
+.copyright > li {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.copyright > li > select {
+  color: #8e8e8e;
+  border: none;
+  outline: none;
+}
+
+/* RESPONSIVE CSS */
+@media screen and (max-width: 767px) {
+  .section-2 {
+    margin-top: 0;
+    margin-left: -4px;
+  }
+
+  .footer > div {
+    width: 100% !important;
+  }
+
+ .footer {
+    padding-bottom: 30px;
+  }
+}

