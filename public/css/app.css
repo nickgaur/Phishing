@@ -2,7 +2,6 @@ body {
   background-color: rgba(250, 250, 250, 1);
   margin: auto;
   height: 100vh;
-  overflow-x: hidden;
 }
 
 .main {
@@ -180,6 +179,9 @@ button:disabled {
 
 /* RESPONSIVE CSS */
 @media screen and (max-width: 767px) {
+  body {
+    overflow: hidden;
+  }
   .section-2 {
     margin-top: 0;
     margin-left: -4px;
