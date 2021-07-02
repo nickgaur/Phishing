@@ -9,7 +9,6 @@ const ejs = require("ejs");
 const path = require("path");
 const ejsMate = require("ejs-mate");
 
-const app = express();
 // const dbUrl = "mongodb://localhost:27017/hacked"; //FOR DEVELOPMENT MODE
 const DBUrl = process.env.DBURL; //FOR PRODUCTION
 
@@ -26,6 +25,7 @@ db.once("open", () => {
   console.log("Database connected!!");
 });
 
+const app = express();
 app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
